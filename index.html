@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Tales</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+</head>
+<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-3">
+        <a class="navbar-brand ms-5" href="index.html">Wedding Tales</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" 
+        aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- offcanvas-->
+        <div class="offcanvas offcanvas-end w-75 text-bg-dark" tabindex="-1" id="navbarOffcanvasLg" 
+        aria-labelledby="navbarOffcanvasLgLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Wedding Angel</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                    <li class="nav-item me-3">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link active" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link active" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown me-2">
+                        <a class="nav-link active dropdown-toggle" href="#location" role="button" data-bs-toggle="dropdown" 
+                        aria-expanded="false">
+                            Locations
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#location">Kolkata</a></li>
+                            <li><a class="dropdown-item" href="#location">Delhi</a></li>
+                            <li><a class="dropdown-item" href="#location">Bangalore</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="pages/book.html">Custom Booking</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link active" href="#">Contact Us</a>
+                    </li>
+                    <a href="pages/book.html" id="book" class="btn btn-danger rounded-pill btn-md">Book Now</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel-->
+    <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="pictures/Carousel/slide1.webp" alt="wedding" class="d-block" style="width:100%">
+          <div class="carousel-caption">
+              <h3>Marriage</h3>
+              <p>Perfect Photography</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="pictures/Carousel/slide2.webp" alt="wedding1" class="d-block" style="width:100%">
+          <div class="carousel-caption">
+              <h3>Candid</h3>
+              <p>We capture great moments</p>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="pictures/Carousel/slide3.webp" alt="wedding3" class="d-block" style="width:100%">
+          <div class="carousel-caption">
+              <h3>Matchmaking</h3>
+              <p>Forever memory</p>
+          </div>
+      </div>
+  </div>
+
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev carousel-dark" type="button" data-bs-target="#demo" data-bs-slide="prev" aria-label="Previous slide">
+      <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next carousel-dark" type="button" data-bs-target="#demo" data-bs-slide="next" aria-label="Next slide">
+      <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+
+    <!-- Main Card -->
+     <div class="container">
+     <div class="main-card my-5" style="max-width: 100%; width: 100%; min-height: 500px;">
+       <div class="row g-0">
+        <div class="col-md-4 mt-5">
+            <img src="pictures/extra/wedding1.webp" class="img-fluid rounded-start" alt="Wedding Service">
+        </div>
+        <div class="col-md-7">
+            <div class="card-body ms-4">
+                <h5 class="card-title ms-3 mt-5">What We Do</h5><br>
+                <p class="card-text ms-3">
+                    We specialize in creating beautiful, memorable weddings that leave a lasting impression.
+                    Our expert team ensures every detail is taken care of, offering customized services tailored to your needs.
+                </p>
+                <br>
+
+                <!-- Accordion -->
+                <div class="accordion ms-3" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                            <strong>Cinematic Photography</strong>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Wedding Tales will deliver you high quality Cinematic memories of your wedding moments.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            <strong>Expert Team</strong>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                We have over 10 years experience in this field and has diverse talented team members.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                <strong>Reasonable Pricing</strong>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Our pricing is the most reasonable and competitive.
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!--Second Card-->
+    <div class="container my-5" id="projects">
+      <h2 class="text-center mb-4">Wedding Styles</h2>
+
+    <div class="card-group mt-5 mb-5">
+        <div class="card card2">
+          <img src="pictures/second card/modern.webp" class="card-img-top" alt="modern">
+          <div class="card-body">
+            <h5 class="card-title">Modern Marriage</h5>
+            <p class="card-text">Get the perfect blend of traditional and modern vibes with our tailored services.</p>
+            <button type="button" class="btn btn-outline-dark">
+                <a href="" class="text-decoration-none ">See More</a>
+            </button>
+          </div>
+        </div>
+        <div class="card card2">
+          <img src="pictures/second card/n-indian.webp" class="card-img-top" alt="north indian">
+          <div class="card-body">
+            <h5 class="card-title">North Indian</h5>
+            <p class="card-text">We have multiple themes for north indian marriage locations to define your special day.</p>
+            <button type="button" class="btn btn-outline-dark">
+                <a href="" class="text-decoration-none ">See More</a>
+            </button>
+          </div>
+        </div>
+        <div class="card card2">
+          <img src="pictures/second card/s-indian.webp" class="card-img-top" alt="south indian">
+          <div class="card-body">
+            <h5 class="card-title">South Indian</h5>
+            <p class="card-text">A professional touch to preserve your engagement memories in traditional South Indian theme.</p>
+            <button type="button" class="btn btn-outline-dark">
+                <a href="" class="text-decoration-none ">See More</a>
+            </button>
+          </div>
+        </div>
+    </div>
+    
+
+
+    <!--Pricing-->
+
+    <div class="container my-5" id="pricing">
+        <h2 class="text-center mb-4">Our Pricing Plans</h2>
+        <div class="row">
+          <!-- Classic Plan -->
+          <div class="col-md-4 mb-4">
+            <div class="card text-center shadow-lg">
+              <div class="card-header bg-primary text-white">
+                Classic
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Starts from <br>₹30,000</h5>
+                <p class="card-text me-2">Perfect for couples looking for wedding essential features to get started.</p><br>
+                <ul class="list-unstyled d-inline-block text-start ">
+                  <li class="d-flex align-items-center">
+                    <span class="me-2 text-success">✔</span> High Quality images & videos
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <span class="me-2 text-success">✔</span> Only Wedding Shot/Video
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <span class="me-2 text-success">✔</span> Upto 300 Pictures
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <span class="me-2 text-success">✔</span> 2 Printed photo collage book 
+                  </li>
+                </ul>
+                <br>
+                <a href="#" class="btn btn-primary">Choose Classic</a>
+              </div>
+              <div class="card-footer text-muted">
+                Most affordable plan
+              </div>
+            </div>
+          </div>
+      
+          <!-- Plus Plan -->
+          <div class="col-md-4 mb-4">
+            <div class="card text-center shadow-lg border-primary">
+              <div class="card-header bg-dark text-white">
+                Plus
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Starts from <br>₹80,000</h5>
+                <p class="card-text me-2">Ideal for urban area wedding that need additional features.</p><br>
+                <ul class="list-unstyled d-inline-block text-start">
+                  <li class="d-flex align-items-center">
+                    <span class="me-2 text-success">✔</span> All Classic Features
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <span class="me-2 text-success">✔</span> Pre Wedding Shot/video included
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <span class="me-2 text-success">✔</span> Upto 2 different location shot
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <span class="me-2 text-success">✔</span> cloud storage upto 5 years 
+                  </li>
+                </ul>
+                <br>
+                <a href="#" class="btn btn-dark">Choose Plus</a>
+              </div>
+              <div class="card-footer text-muted">
+                Best value Plan
+              </div>
+            </div>
+          </div>
+      
+          <!-- Premium Plan -->
+          <div class="col-md-4 mb-4">
+            <div class="card text-center shadow-lg">
+              <div class="card-header bg-warning text-dark">
+                Premium
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Starts from <br>₹2,000,000</h5>
+                <p class="card-text me-2">For grand celebration requiring advanced tools & dedicated support.</p><br>
+                <ul class="list-unstyled d-inline-block text-start">
+                  <li class="d-flex align-items-center">
+                    <span class="me-2 text-success">✔</span> All Plus Features
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <span class="me-2 text-success">✔</span> Pre/Post Wedding shot included
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <span class="me-2 text-success">✔</span> 4k video resolution
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <span class="me-2 text-success">✔</span> Drone Shot features
+                  </li>
+                </ul>
+                <br>
+                <a href="#" class="btn btn-warning text-dark">Choose Premium</a>
+              </div>
+              <div class="card-footer text-muted">
+                Grand celebration plan
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!--Locations-->
+
+      <div class="container" id="location" style="text-align: center;">
+        <h3 class="mb-4">Our Locations</h3>
+        <img src="pictures/icons/kolkata.png" class="rounded-pill mx-4 my-4" id="location-icon" alt="Kolkata">
+        <img src="pictures/icons/delhi.png" class="rounded-pill mx-4 my-4" id="location-icon" alt="Delhi">
+        <img src="pictures/icons/bengaluru.png" class="rounded-pill mx-4 my-4" id="location-icon" alt="Bangalore">
+      </div>
+      
+      
+
+   </body>
+
+    <!--Footer-->
+
+    <footer>
+      <div class="container-fluid text-center mt-5 py-4">
+          <p>&copy; 2025 Wedding Tales</p>
+      </div>
+    </footer>
+
+
+
+
+</html>
