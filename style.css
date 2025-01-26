@@ -1,0 +1,238 @@
+body {
+    padding-top: 5px;
+    padding-left: 20px;  /* Add left padding */
+    padding-right: 20px; /* Add right padding */
+}
+html {
+   scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar-brand {
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+    color: #fff;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.9), 0 0 25px rgba(222, 130, 130, 0.9);
+    transform: scale(1.0);
+}
+
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-nav .nav-link.active {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active:hover {
+    color: rgb(71, 240, 71);
+}
+
+#book:hover {
+    background-color: #2a00a9;
+    border-color: #2a00a9;
+}
+
+.navbar {
+    z-index: 1030;
+}
+
+/* carousel*/
+
+
+
+/* Carousel Images */
+.carousel-item img {
+    padding-top: 60px;
+    width: 100%; /* Ensure the image fills the carousel width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 80vh; /* Prevent images from growing too tall */
+    object-fit: contain; /* Show the full image without cropping */
+    margin: auto; /* Center the image if any extra spacing occurs */
+}
+
+/* Carousel Caption Styling - Reset and Define */
+.carousel-caption {
+    position: absolute !important; /* Ensure it’s absolutely positioned */
+    bottom: 25px !important; /* Position caption at the bottom */
+    left: 50% !important; /* Center horizontally */
+    transform: translateX(-50%) !important; /* Align center horizontally */
+    text-align: center !important; /* Center text */
+    color: #fff !important; /* Ensure white text color */
+    background-color: rgba(40, 40, 40, 0.116) !important; /* Visible background */
+    padding: 10px 15px !important; /* Add padding */
+    border-radius: 8px !important; /* Rounded corners */
+    max-width: 80% !important; /* Restrict caption width */
+    z-index: 10 !important; /* Ensure it appears above other elements */
+}
+
+/* Ensure proper alignment on small screens */
+@media (max-width: 576px) {
+    .carousel-caption {
+        font-size: 12px !important; /* Smaller font for mobile */
+        padding: 8px 10px !important; /* Compact padding */
+        max-width: 90% !important; /* Wider caption on smaller devices */
+    }
+}
+
+
+
+.accordion {
+  width: 90%; /* Adjust percentage or use a fixed width like 300px */
+  margin-right: 0 auto; /* Centers the accordion horizontally */
+}
+
+
+.card-title {
+   font-size: 1.5rem;
+   font-weight: bold;
+}
+
+.card-text {
+  font-size: 1.1rem;
+  color: #4b4b4b; /* Slightly lighter text color */
+}
+
+.text-muted {
+  font-size: 0.875rem;
+  color: #3b3b3b;
+}
+
+
+.card-group .card img {
+    width: 100%; /* Stretch image to match the card width */
+    height: 350px; /* Set height for uniformity */
+    object-fit: cover; /* Ensure images fill the area without distortion */
+}
+
+.card-body {
+    padding: 15px; /* Add padding for better spacing */
+}
+
+.card-body h5 {
+    font-size: 1.25rem; /* Increase title size for better readability */
+}
+
+.card-body p {
+    font-size: 1rem; /* Increase text size for readability */
+}
+
+/* Desktop view adjustments */
+@media (min-width: 768px) {
+    .card-body h5 {
+        font-size: 1.5rem; /* Larger text for better readability */
+    }
+
+    .card-body p {
+        font-size: 1.20rem; /* Increase paragraph text size */
+    }
+}
+.card2 {
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card2:hover {
+   transform: scale(1.03);
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensures only the hovered card is affected */
+.card-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Adds space between cards */
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.card2 {
+ flex: 1;
+ margin: 0; /* Margin is now handled by gap */
+ min-width: 250px; /* Ensures cards don't shrink too much on small screens */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+.card-group {
+  flex-direction: column; /* Stacks cards vertically on small screens */
+  gap: 15px; /* Adjust spacing for vertical stacking */
+}
+
+.card2 {
+  flex: none; /* Prevents cards from resizing */
+  width: 100%; /* Makes cards take full width of the container */
+}
+}
+
+
+.card {
+   border-radius: 12px;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+   transform: scale(1.03);
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card ul {
+  padding: 0;
+  margin: 15px 0;
+  list-style-type: none;
+}
+
+.card ul li {
+   margin: 5px 0;
+}
+
+li span {
+    font-size: 1.2rem; /* Makes the tick mark slightly larger for emphasis */
+}
+.main-card {
+  background-color: #f8f9fa; /* Light background */
+  padding: 30px;
+  border-radius: 12px;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for pop-up effect */
+}
+
+
+  #location-icon {
+      width: 100px;
+      height: 100px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+      transition: transform 0.5s ease; /* Smooth animation for hover effect */
+  }
+
+  #location-icon:hover {
+      transform: scale(1.1); /* Slightly enlarges image on hover */
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Increases shadow intensity on hover */
+  }
+
+  /* Footer*/
+  footer {
+    background-color: #333; /* Example background color for the footer */
+    color: white; /* Text color */
+}
+
+.container-fluid {
+    padding-left: 0; /* Remove left padding */
+    padding-right: 0; /* Remove right padding */
+    width: 100%; /* Ensure full width */
+}
+
+footer p {
+    margin: 0; /* Remove any default margin on the paragraph */
+}
+
+
+
+
+
+
