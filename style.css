@@ -46,7 +46,7 @@ html {
 
 /* Carousel Images */
 .carousel-item img {
-    padding-top: 65px;
+    padding-top: 70px;
     width: 100%; /* Ensure the image fills the carousel width */
     height: auto; /* Maintain aspect ratio */
     max-height: 80vh; /* Prevent images from growing too tall */
